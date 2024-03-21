@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XenoByte Bot</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        color: #fff;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #1f1f1f;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    button {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #7289da;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #677bc4;
+    }
+
+    .discord-logo {
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .discord-logo {
+        animation: float 1s infinite;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 50px;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+        .container {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 150px;
+            padding: 8px 16px;
+        }
+
+        .discord-logo {
+            width: 80px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to XenoByte Bot!</h1>
+    <p>XenoByte is a powerful Discord bot ready to enhance your server experience.</p>
+    <button onclick="inviteBot()">Invite XenoByte</button>
+</div>
+<footer>
+    Created by: plxid | XenoByte&copy; 2024
+</footer>
+<script>
+    function inviteBot() {
+        window.open('https://discord.com/oauth2/authorize?client_id=1216253648594800691&permissions=8&scope=applications.commands+bot', '_blank');
+        alert('Thanks for inviting XenoByte!');
+    }
+</script>
+</body>
+</html>
